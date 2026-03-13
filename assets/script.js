@@ -7,7 +7,7 @@ document.querySelector(".busca").addEventListener("submit", async (event) => {
         clearInfo();
         showWarning("Carregando...");
 
-        let url = `http://localhost:3000/clima?cidade=${encodeURI(input)}`;
+        let url = `https://api-de-clima-wj03.onrender.com/clima?cidade=${encodeURI(input)}`;
         let results = await fetch(url);
         let json = await results.json();
         console.log(json);
