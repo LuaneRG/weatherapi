@@ -46,7 +46,7 @@ function showInfo(json) {
         .querySelector(".temp img")
         .setAttribute(
             "src",
-            `http://openweathermap.org/img/wn/${json.tempIcon}@2x.png`,
+            `https://openweathermap.org/img/wn/${json.tempIcon}@2x.png`,
         );
     document.querySelector(".ventoPonto").style.transform = `rotate(${
         json.windAngle - 90
